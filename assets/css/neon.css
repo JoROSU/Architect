@@ -57,7 +57,6 @@
 .site-footer {
   border-top: #eeeeee;
   padding: 30px 0;
-  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: right;
@@ -333,7 +332,6 @@ body .carousel-inner > .active {
 .site-footer {
   border-top: #eeeeee;
   padding: 30px 0;
-  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: right;
@@ -761,8 +759,8 @@ section.breadcrumb .alt-select-field {
 .gallery-item .image .hover-zoom {
   position: absolute;
   display: block;
-  top: 50%;
-  left: 50%;
+  bottom: 10%;
+  right: 10%;
   margin-top: -16px;
   margin-left: -16px;
   background: url(../images/zoom-icon.png) no-repeat center center;

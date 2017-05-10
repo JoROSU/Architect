@@ -16,6 +16,9 @@
         <link rel="stylesheet" href="assets/css/font-icons/entypo/css/entypo.css">
         <link rel="stylesheet" href="assets/css/neon.css">
 
+		<link rel="stylesheet" href="assets/js/nivo-lightbox/nivo-lightbox.css">
+		<link rel="stylesheet" href="assets/js/nivo-lightbox/themes/default/default.css">
+
         <script src="assets/js/jquery-1.11.3.min.js"></script>
 
         <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -42,43 +45,43 @@
                             <div class="site-header">
                                 <div class="row">
                                     <div class="col-sm-3">
-                                        <a href="index1.html">
+                                        <a href="work.html">
                                             <img src="assets/images/logo.png" width="120" />
                                         </a>
                                     </div>
-                                    <div class="col-sm-6 center">
-                                        
-                                        <nav class="site-nav">
-                                            <ul class="main-menu hidden-xs" id="main-menu">
-                                                
-                                                
-                                                <li class="active">
-                                                    <a href="work.html">
-                                                        <span>Work</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="about.html">
-                                                        <span>About</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.html">
-                                                        <span>Contact</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <div class="visible-xs">
-                                                <a href="#" class="menu-trigger">
-                                                    <i class="entypo-menu"></i>
-                                                </a>
-                                            </div>
-                                        </nav>
-                                    </div>
+									<div class="col-sm-6 center">
+
+										<nav class="site-nav">
+											<ul class="main-menu hidden-xs" id="main-menu">
+
+
+												<li class="active">
+													<a href="work.html">
+														<span>Radovi</span>
+													</a>
+												</li>
+												<li>
+													<a href="about.html">
+														<span>O meni</span>
+													</a>
+												</li>
+												<li>
+													<a href="contact.html">
+														<span>Kontakt</span>
+													</a>
+												</li>
+											</ul>
+											<div class="visible-xs">
+												<a href="#" class="menu-trigger">
+													<i class="entypo-menu"></i>
+												</a>
+											</div>
+										</nav>
+									</div>
                                     <div class="col-sm-3">
                                         <nav class="site-nav pull-right">
-                                            <ul class="main-menu hidden-xs" id="main-menu">
-                                                <li class="active">
+                                            <ul class="main-menu hidden-xs" id="main-menu1">
+                                                <li>
                                                     <a href="index.html">
                                                         <span>EN</span>
                                                     </a>
@@ -88,7 +91,7 @@
                                                         <span>DE</span>
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li class="active">
                                                     <a href="index_sr.html">
                                                         <span>SR</span>
                                                     </a>
@@ -117,280 +120,166 @@
             <div class="row">
 			
 			<div class="col-sm-7">
-                            <h1>Work</h1>
+                            <h1>Radovi</h1>
 							
 			</div>
-			
+
 			<div class="col-sm-5">
-                           
-				
-				<!-- Category Filter -->
-				<div class="btn-group alt-select-field" id="category-filter">
-				<button type="button" class="btn btn-label" style="display:none;" data-toggle="dropdown">All</button>
-					
-					<ul class="dropdown-menu" style="display:block;" role="menu">
-						<li>
-							<a href="#" data-filter="architecture">Arhitektura</a>
-						</li>
-                                                <li>
-							<a href="#" data-filter="design">Enterijer</a>
-						</li>
-					</ul>
-					
-				</div>
-				
+
+
 			</div>
 			
 		</div>
-		
-		<div class="row" id="portfolio-items">
-			
-			<div class="item col-sm-4 col-xs-6 filter-architecture">
-				
-				<div class="portfolio-item">
-					<a href="portfolio-single.html" class="image">
-						<img src="assets/images/house-1/1.jpg" />
-						<span class="hover-zoom"></span>
-					</a>
-					
-					<h4>
-						<a href="portfolio-single.html" class="like">
-							<i class="entypo-heart"></i>
-						</a>
-						
-						<a href="portfolio-single.html" class="name">House 1</a>
-					</h4>
-					
-					<div class="categories">
-						<a href="portfolio-single.html">Architecture</a>
+
+		<script type="text/javascript">
+			// Setup Gallery Lightbox
+			jQuery(document).ready(function($)
+			{
+				$(".gallery-item .image").nivoLightbox();
+			});
+		</script>
+		<section class="gallery-container">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="gallery-item">
+							<a href="assets/images/house-MD/1.jpg" data-lightbox-gallery="gallery1" class="image" title="Pogled">
+								<img src="assets/images/house-MD/1.jpg" />
+								<span class="title">
+									<h3>Kuća DM</h3>
+									<br>
+									<p>Prijedor, 2017.</p>
+									<p>500 m2</p>
+									<p>Lorem ipsum</p>
+								</span>
+								<span class="hover-zoom"></span>
+							</a>
+							<a href="assets/images/house-MD/2.jpg" data-lightbox-gallery="gallery1" class="image" title="Pogled 1"></a>
+							<a href="assets/images/house-MD/3.jpg" data-lightbox-gallery="gallery1" class="image" title="Pogled 2"></a>
+							<a href="assets/images/house-MD/4.jpg" data-lightbox-gallery="gallery1" class="image" title="Pogled 3"></a>
+							<a href="assets/images/house-MD/5.jpg" data-lightbox-gallery="gallery1" class="image" title="Pogled 4"></a>
+							<a href="assets/images/house-MD/6.jpg" data-lightbox-gallery="gallery1" class="image" title="Detalj"></a>
+							<a href="assets/images/house-MD/7.jpg" data-lightbox-gallery="gallery1" class="image" title="Osnova 1"></a>
+							<a href="assets/images/house-MD/8.jpg" data-lightbox-gallery="gallery1" class="image" title="Osnova 2"></a>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="item col-sm-4 col-xs-6 filter-architecture">
-				
-				<div class="portfolio-item">
-					<a href="portfolio-single.html" class="image">
-						<img src="assets/images/house-2/1.jpg"/>
-						<span class="hover-zoom"></span>
-					</a>
-					
-					<h4>
-						<a href="portfolio-single.html" class="like liked">
-							<i class="entypo-heart"></i>
-						</a>
-						
-						<a href="portfolio-single.html" class="name">House 2</a>
-					</h4>
-					
-					<div class="categories">
-						<a href="portfolio-single.html">Architecture</a>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="gallery-item">
+							<a href="assets/images/house-SG/1.jpg" data-lightbox-gallery="gallery4" class="image" title="Kuca SG">
+								<img src="assets/images/house-SG/1.jpg" />
+								<span class="title">
+									<h3>Kuća SG</h3>
+									<br>
+									<p>Sanski Most, 2017.</p>
+									<p>100 m2</p>
+									<p>Lorem ipsum</p>
+								</span>
+								<span class="hover-zoom"></span>
+							</a>
+							<a href="assets/images/house-SG/2.jpg" data-lightbox-gallery="gallery4" class="image" title="Pogled 1"></a>
+							<a href="assets/images/house-SG/3.jpg" data-lightbox-gallery="gallery4" class="image" title="Pogled 2"></a>
+							<a href="assets/images/house-SG/4.jpg" data-lightbox-gallery="gallery4" class="image" title="Pogled 3"></a>
+							<a href="assets/images/house-SG/5.jpg" data-lightbox-gallery="gallery4" class="image" title="Pogled 4"></a>
+							<a href="assets/images/house-SG/6.jpg" data-lightbox-gallery="gallery4" class="image" title="Detalj"></a>
+							<a href="assets/images/house-SG/7.jpg" data-lightbox-gallery="gallery4" class="image" title="Osnova 1"></a>
+							<a href="assets/images/house-SG/8.jpg" data-lightbox-gallery="gallery4" class="image" title="Osnova 2"></a>
+							<a href="assets/images/house-SG/9.jpg" data-lightbox-gallery="gallery4" class="image" title="Osnova 2"></a>
+						</div>
 					</div>
-				</div>
-				
-			</div>
-			
-			<div class="item col-sm-4 col-xs-6 filter-architecture">
-				
-				<div class="portfolio-item">
-					<a href="portfolio-single.html" class="image">
-						<img src="assets/images/house-3/1.jpg" />
-						<span class="hover-zoom"></span>
-					</a>
-					
-					<h4>
-						<a href="portfolio-single.html" class="like">
-							<i class="entypo-heart"></i>
-						</a>
-						
-						<a href="portfolio-single.html" class="name">Motel</a>
-					</h4>
-					
-					<div class="categories">
-						<a href="portfolio-single.html">Architecture</a>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="gallery-item">
+							<a href="assets/images/kafers/1.jpg" data-lightbox-gallery="gallery2" class="image" title="Kraljevac">
+								<img src="assets/images/kafers/1.jpg" />
+								<span class="title">
+									<h3>Restoran Kafers</h3>
+									<br>
+									<p>Beč, 2017.</p>
+									<p>250 m2</p>
+									<p>Lorem ipsum</p>
+								</span>
+								<span class="hover-zoom"></span>
+							</a>
+							<a href="assets/images/kafers/2.jpg" data-lightbox-gallery="gallery2" class="image" title="Pogled 1"></a>
+							<a href="assets/images/kafers/3.jpg" data-lightbox-gallery="gallery2" class="image" title="Pogled 2"></a>
+							<a href="assets/images/kafers/4.jpg" data-lightbox-gallery="gallery2" class="image" title="Pogled 3"></a>
+						</div>
 					</div>
-				</div>
-				
-			</div>
-			
-			<div class="item col-sm-4 col-xs-6 filter-branding">
-				
-				<div class="portfolio-item">
-					<a href="portfolio-single.html" class="image">
-						<img src="assets/images/portfolio-thumb-1.png" class="img-rounded" />
-						<span class="hover-zoom"></span>
-					</a>
-					
-					<h4>
-						<a href="portfolio-single.html" class="like liked">
-							<i class="entypo-heart"></i>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="gallery-item">
+						<a href="assets/images/kraljevac/1.jpg" data-lightbox-gallery="gallery3" class="image" title="Kraljevac">
+							<img src="assets/images/kraljevac/1.jpg" />
+								<span class="title">
+									<h3>Hotel Kraljevac</h3>
+									<br>
+									<p>Sanski Most, 2017.</p>
+									<p>1500 m2</p>
+									<p>Lorem ipsum</p>
+								</span>
+
 						</a>
-						
-						<a href="portfolio-single.html" class="name">Package Design</a>
-					</h4>
-					
-					<div class="categories">
-						<a href="portfolio-single.html">Branding</a>
+						<a href="assets/images/kraljevac/2.jpg" data-lightbox-gallery="gallery3" class="image" title="Pogled 1"></a>
+						<a href="assets/images/kraljevac/3.jpg" data-lightbox-gallery="gallery3" class="image" title="Pogled 2"></a>
+						<a href="assets/imageskraljevac/4.jpg" data-lightbox-gallery="gallery3" class="image" title="Pogled 3"></a>
 					</div>
+
 				</div>
-				
-			</div>
-			
-			<div class="item col-sm-4 col-xs-6 filter-print">
-				
-				<div class="portfolio-item">
-					<a href="portfolio-single.html" class="image">
-						<img src="assets/images/portfolio-thumb-1.png" class="img-rounded" />
-						<span class="hover-zoom"></span>
-					</a>
-					
-					<h4>
-						<a href="portfolio-single.html" class="like">
-							<i class="entypo-heart"></i>
-						</a>
-						
-						<a href="portfolio-single.html" class="name">Google+</a>
-					</h4>
-					
-					<div class="categories">
-						<a href="portfolio-single.html">Printing</a>
-					</div>
+
 				</div>
-				
+
 			</div>
-			
-			<div class="item col-sm-4 col-xs-6 filter-campaign filter-design">
-				
-				<div class="portfolio-item">
-					<a href="portfolio-single.html" class="image">
-						<img src="assets/images/portfolio-thumb-1.png" class="img-rounded" />
-						<span class="hover-zoom"></span>
-					</a>
-					
-					<h4>
-						<a href="portfolio-single.html" class="like">
-							<i class="entypo-heart"></i>
-						</a>
-						
-						<a href="portfolio-single.html" class="name">Origami</a>
-					</h4>
-					
-					<div class="categories">
-						<a href="portfolio-single.html">Package Design</a>
-					</div>
-				</div>
-				
-			</div>
-			
-		</div>
-		
-		<div class="row">
-		
-			<div class="col-md-12">
-			
-				<div class="text-center">
-				
-					<ul class="pagination">
-						<li class="active">
-							<a href="#">1</a>
-						</li>
-						<li>
-							<a href="#">2</a>
-						</li>
-						<li>
-							<a href="#">3</a>
-						</li>
-						<li>
-							<a href="#">4</a>
-						</li>
-						<li>
-							<a href="#">5</a>
-						</li>
-						<li>
-							<a href="#">Next</a>
-						</li>
-					</ul>
-					
-				</div>
-				
-			</div>
-			
-		</div>
-		
+
+		</section>
+
+
 	</div>
-	
+
 </section>
-            <script type="text/javascript">
-jQuery(document).ready(function($)
-{
-	var $portfolio_items = $("#portfolio-items"),
-		$category_filter = $("#category-filter");
-	
-	$portfolio_items.isotope({
-		itemSelector: '.item',
-		columnWidth: 1/4
-	});
-	
-	$category_filter.on('change', function(ev, o)
-	{
-		var filter = o.el.data('filter');
-		
-		$portfolio_items.isotope({
-			filter: o.isDefault ? '.item' : '.filter-' + filter
-		});
-	});
-	
-	$(window).on('neon.resize', function()
-	{
-		$portfolio_items.isotope('reLayout');
-	});
-	
-	$portfolio_items.isotope('reLayout');
-});
-</script>
 
-            <!-- Site Footer -->
-            <footer class="site-footer">
+				<!-- Site Footer -->
+				<footer class="site-footer">
 
-                <div class="container">
+					<div class="container">
 
-                    <div class="row">
+						<div class="row">
 
-                        <div class="col-sm-12">
-                            Copyright &copy; JoZebra - All Rights Reserved. 
-                        </div>
-<div class="col-sm-6">
-                            <ul class="social-networks text-right">
-                                <li>
-                                    <a target="_blank" href="https://www.instagram.com/bojansipka/?hl=en">
-                                        <i class="entypo-instagram"></i>lsdkf
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="#">
-                                        <i class="entypo-twitter"></i>kldslk
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/Bojan-%C5%A0ipka-Arhitekta-1381279525446802/">
-                                        <i class="entypo-facebook"></i>klsdk
-                                    </a>
-                                </li>
-                            </ul>
+							<div class="col-sm-12">
+								Copyright &copy; JoZebra - All Rights Reserved.
+							</div>
+							<div class="col-sm-6">
+								<ul class="social-networks text-right">
+									<li>
+										<a target="_blank" href="https://www.instagram.com/bojansipka/?hl=en">
+											<i class="entypo-instagram"></i>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="#">
+											<i class="entypo-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="https://www.facebook.com/Bojan-%C5%A0ipka-Arhitekta-1381279525446802/">
+											<i class="entypo-facebook"></i>
+										</a>
+									</li>
+								</ul>
 
-                        </div>
-                    </div>
+							</div>
+						</div>
 
-                </div>
+					</div>
 
-            </footer>	
-        </div>
-
+				</footer>
+</div>
 
         <!-- Bottom scripts (common) -->
         <script src="assets/js/gsap/TweenMax.min.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/resizeable.js"></script>
-        <script src="assets/js/isotope/jquery.isotope.min.js"></script>
+		<script src="assets/js/nivo-lightbox/nivo-lightbox.min.js"></script>
 
 
         <!-- JavaScripts initializations and stuff -->
